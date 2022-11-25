@@ -21,7 +21,8 @@ pipeline{
           steps{
             script{
                 // sh 'docker build -t rahulanand04292/inspectionamessagingapp'
-                bat 'docker build -t "rahulanand04292/inspectionamessagingapp"'
+                bat 'docker build -t rahulanand04292/inspectionamessagingapp .'
+                
                 // docerImage = dock÷er.build registry + ":$BUILD_NUMBER"
             }
           }  
